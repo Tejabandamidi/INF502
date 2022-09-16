@@ -132,8 +132,17 @@ git checkout math
    
 6. Edit B.py adding the following source code below the content you have there.
 ```
-print 'I know math, look:'
-print 2+2
+C:\Users\hi\Desktop\INF502\handson\handson>git add B.py
+
+C:\Users\hi\Desktop\INF502\handson\handson>git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   B.py
+
+
+C:\Users\hi\Desktop\INF502\handson\handson>git commit -m "B.py"
+[main 35efccc] B.py
 ```
 
 7. Write a command (or sequence) to commit your changes.
@@ -154,7 +163,8 @@ git commit -m "adding one line to B.py on master branch"
 
 9. Write a command sequence to merge the `math` branch into `master` and describe what happened.
 ```
-Already up to date 
+C:\Users\hi\Desktop\INF502\handson\handson>git merge math
+Already up to date. 
 
 git checkout master 
 git merge math
