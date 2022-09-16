@@ -143,6 +143,7 @@ Changes to be committed:
 
 C:\Users\hi\Desktop\INF502\handson\handson>git commit -m "B.py"
 [main 35efccc] B.py
+ 1 file changed, 2 insertions(+)
 ```
 
 7. Write a command (or sequence) to commit your changes.
