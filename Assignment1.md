@@ -110,6 +110,8 @@ index e69de29..c63f94c 100644
 @@ -0,0 +1 @@
 +# Another file that will receive a line of code... at least.
 
+The default branch is called a 'Master' branch. While, other branches are evolved through the actions of the commits. As the current branch we are on is math, it is also our main branch. In other words, it is master branch.
+
 ```
 
 4. Write a command sequence to merge the non-master branch into `master`.
