@@ -30,6 +30,38 @@ print(pythagoreanTheorem(length_a,length_b))
 ```
 OUTPUT1
 ```
+EXAMPLE_1:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_1.py
+length_a: 4
+length_b: 3
+5.0
+
+Process finished with exit code 0
+
+EXAMPLE_2:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_1.py
+length_a: 5
+length_b: 4
+6.4031242374328485
+
+Process finished with exit code 0
+
+EXAMPLE_3:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_1.py
+length_a: 3
+length_b: 3
+4.242640687119285
+
+Process finished with exit code 0
+
+EXAMPLE_4:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_1.py
+length_a: 6
+length_b: 8
+10.0
+
+Process finished with exit code 0
+
 ```
 
 ```
@@ -61,7 +93,7 @@ def list_mangler(list_in):
 #creating an empty list for taking user input
 list_in=[]
 #declaring the length of the list for user input
-n=int(input("enter the length:"))
+n=int(input("enter the length of input list:"))
 #Loop for taking the input and assigning the elements
 for i in range(n):
     #taking the elements into the list from the user
@@ -73,8 +105,51 @@ print(list_mangler(list_in))
 ```
 OUTPUT2
 ```
-```
+EXAMPLE_1:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_2.py
+enter the length of input list:4
+enter elements:2
+enter elements:4
+enter elements:3
+enter elements:6
+[4, 8, 9, 12]
 
+Process finished with exit code 0
+
+EXAMPLE_2:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_2.py
+enter the length of input list:5
+enter elements:32
+enter elements:19
+enter elements:5
+enter elements:2
+enter elements:7
+[64, 57, 15, 4, 21]
+
+Process finished with exit code 0
+
+EXAMPLE_3:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_2.py
+enter the length of input list:4
+enter elements:2
+enter elements:4
+enter elements:6
+enter elements:8
+[4, 8, 12, 16]
+
+Process finished with exit code 0
+
+EXAMPLE_4:
+```
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_2.py
+enter the length of input list:4
+enter elements:3
+enter elements:9
+enter elements:7
+enter elements:11
+[9, 27, 21, 33]
+
+Process finished with exit code 0
 ```
 3. Write a function with the following signature: grade_calc(grades_in, to_drop).
 
@@ -130,6 +205,67 @@ print(grade_calc(grades_in, to_drop))
 ```
 OUTPUT3
 ```
+EXAMPLE_1:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_3.py
+Number of grades :4
+52
+66
+89
+98
+[52, 66, 89, 98]
+Grades to drop : 2
+[89, 98]
+93.5
+A
+
+Process finished with exit code 0
+
+EXAMPLE_2:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_3.py
+Number of grades :4
+11
+17
+98
+16
+[11, 16, 17, 98]
+Grades to drop : 2
+[17, 98]
+57.5
+F
+
+Process finished with exit code 0
+
+EXAMPLE_3:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_3.py
+Number of grades :5
+91
+96
+87
+76
+77
+[76, 77, 87, 91, 96]
+Grades to drop : 3
+[91, 96]
+93.5
+A
+
+Process finished with exit code 0
+
+EXAMPLE_4:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_3.py
+Number of grades :4
+85
+86
+79
+71
+[71, 79, 85, 86]
+Grades to drop : 2
+[85, 86]
+85.5
+B
+
+Process finished with exit code 0
+
 ```
 
 ```
@@ -174,4 +310,59 @@ odd_even_filter(n_list)
 ```
 OUTPUT4
 ```
+EXAMPLE_1:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_4.py
+please specify the size:4
+enter the integers:
+1
+2
+3
+4
+sub-lists of given list: 
+[[2, 4], [1, 3]]
+
+Process finished with exit code 0
+
+EXAMPLE_2:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_4.py
+please specify the size:5
+enter the integers:
+2
+4
+6
+8
+10
+sub-lists of given list: 
+[[2, 4, 6, 8, 10], []]
+
+Process finished with exit code 0
+
+EXAMPLE_3:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_4.py
+please specify the size:5
+enter the integers:
+3
+9
+11
+15
+17
+sub-lists of given list: 
+[[], [3, 9, 11, 15, 17]]
+
+Process finished with exit code 0
+
+EXAMPLE_4:
+C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_4.py
+please specify the size:5
+enter the integers:
+57
+21
+10
+48
+14
+sub-lists of given list: 
+[[10, 14, 48], [21, 57]]
+
+Process finished with exit code 0
+
 ```
