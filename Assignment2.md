@@ -140,16 +140,18 @@ enter elements:8
 Process finished with exit code 0
 
 EXAMPLE_4:
-```
 C:\Users\hi\PycharmProjects\INF502HW2\venv\Scripts\python.exe C:/Users/hi/PycharmProjects/INF502HW2/HW2_2.py
-enter the length of input list:4
+enter the length of input list:5
 enter elements:3
-enter elements:9
-enter elements:7
 enter elements:11
-[9, 27, 21, 33]
+enter elements:17
+enter elements:15
+enter elements:21
+[9, 33, 51, 45, 63]
 
 Process finished with exit code 0
+```
+
 ```
 3. Write a function with the following signature: grade_calc(grades_in, to_drop).
 
