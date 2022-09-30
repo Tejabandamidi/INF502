@@ -1,3 +1,5 @@
+Links to code:
+
 [code_1](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_1.py)
 
 [code_2](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_2.py)
@@ -27,6 +29,11 @@ length_b=int(input())
 #displaying the output
 print(pythagoreanTheorem(length_a,length_b))
 
+```
+
+Explanation
+```
+To calculate the longest side (Hypotenuse) of a triangle, we use a mathematical expression with a square-root function. In out code, we imported math module and used math.sqrt to find the square-root of sum of the square of two integers which are given as input (sides of the triangle, length_a and length_b).
 ```
 [code_1](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_1.py)
 
@@ -104,6 +111,10 @@ for i in range(n):
     list_in.append(b)
 #displaying the list with doubled and tripled elements based on the condition
 print(list_mangler(list_in))
+```
+Explanation
+```
+list_in is a list of integers.list_mangler is the final output list which contains integers that are doubled or tripled after checking the conditions. Here, all the elements are traversed from the input list. In this code, we checked if the integers are even or odd. When the condition is true for even integers, they are doubled and returned, else, the integers are tripled and values are returned. These elements are displayed as a list and we specified that list as list_mangler.
 ```
 [code_2](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_2.py)
 
@@ -209,6 +220,12 @@ to_drop = int(input('Grades to drop : '))
 #Displaying the grades and corresponding letter grade
 print(grade_calc(grades_in, to_drop))
 ```
+Explanation
+```
+In this code, a list of grades are taken as user input into the list grades_in. User can specify the length of the list and can give the equal number of elements. These elements are sorted using grades_in.sort() function and the least grades are dropped using to_drop which specifies the number of elements to be dropped. To delete these least grades, we used del function and specified the range from 0th element to the user desired number element specified through to_drop. After this, rest of the highest grades are used to calculate the average and corresponding letter grades are specified by checking the conditions in if, elif and else conditions. Corresponding Grades and Letter grades are displayed by the return function.
+```
+[code_3](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_3.py)
+
 OUTPUT3
 ```
 EXAMPLE_1:
@@ -314,6 +331,12 @@ for j in range(a):
     n_list.sort()
 odd_even_filter(n_list)
 ```
+Explanation
+```
+A list n_list is created to store the user-specified input integers. This list is of size specified by the user and equivalent number of elements are given by the user into the list.These elements are sorted for easy traversing. After this, they are traversed to check the condition to verify if they are even or odd. All the integers which are even are appended to the even_list and the remaining integers are appended to the odd_list. These two lists are returned as nested list in one single list and returned to odd_even_filter function. 
+```
+[code_4](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_4.py)
+
 OUTPUT4
 ```
 EXAMPLE_1:
