@@ -6,13 +6,13 @@
 
 [code_4](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_4.py)
 
-
+1.
 ```
 1. Write a function with the following signature: pythagoreanTheorem(length_a, length_b).
 
 The function returns the length of the hypotenuse assuming that length_a and length_b are the lengths of the two legs of a right triangle (the legs that form the triangle's right angle). Hint: the math module might have useful functions to use.
 ```
-CODE1
+CODE
 ```
 #Importing the math module to use squareroot function
 import math
@@ -28,6 +28,8 @@ length_b=int(input())
 print(pythagoreanTheorem(length_a,length_b))
 
 ```
+[code_1](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_1.py)
+
 OUTPUT1
 ```
 EXAMPLE_1:
@@ -63,13 +65,13 @@ length_b: 8
 Process finished with exit code 0
 
 ```
-
+2.
 ```
 2. Write a function with the following signature: list_mangler(list_in).
 
 The function assumes that list_in is a list of integers, and returns a new list containing transformed elements of list_in. If the element is even, it's doubled. If the element is odd, it's tripled.
 ```
-CODE2
+CODE
 ```
 #Defining the function
 def list_mangler(list_in):
@@ -103,6 +105,8 @@ for i in range(n):
 #displaying the list with doubled and tripled elements based on the condition
 print(list_mangler(list_in))
 ```
+[code_2](https://github.com/Tejabandamidi/INF502/blob/main/Code/HW2_2.py)
+
 OUTPUT2
 ```
 EXAMPLE_1:
@@ -151,14 +155,14 @@ enter elements:21
 
 Process finished with exit code 0
 ```
-
+3.
 ```
 3. Write a function with the following signature: grade_calc(grades_in, to_drop).
 
 The function accepts a list grades_in containing integer grades, drops the to_drop lowest grades (so, for to_drop equal to 2, the function should drop the 2 lowest grades), calculates the average of the grades left, and returns the letter grade this average corresponds to according to the letter grade scale for this course.
 
 ```
-CODE3
+CODE
 ```
 #defining the function to calculate the grades
 def grade_calc(grades_in, to_drop):
@@ -269,13 +273,13 @@ B
 Process finished with exit code 0
 
 ```
-
+4.
 ```
 4. Write a function with the following signature: odd_even_filter(numbers).
 
 The function accepts an input list of integers and returns a list with two sublists. The first sublist contains all even numbers in the input list and the second sublist contains all odd numbers.
 ```
-CODE4
+CODE
 ```
 #defining the function to seperate the even and odd elements from a list
 def odd_even_filter(n):
