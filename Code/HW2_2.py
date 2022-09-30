@@ -20,7 +20,7 @@ def list_mangler(list_in):
 #creating an empty list for taking user input
 list_in=[]
 #declaring the length of the list for user input
-n=int(input("enter the length:"))
+n=int(input("enter the length of input list:"))
 #Loop for taking the input and assigning the elements
 for i in range(n):
     #taking the elements into the list from the user
