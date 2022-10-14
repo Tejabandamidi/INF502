@@ -1,3 +1,4 @@
+
 Measuring the similarity between different sequences of DNA may tell us how related the owners of those sequences are. 
 
 A molecule of DNA consists of two chains made up of repeating sub-units called nucleotides. There are four different types of nucleotides in DNA: adenine (A), thymine (T), guanine (G), and cytosine (C)[1]. Programmatically, DNA we can have represent it as a string, where each character must be one of A, G, C, or T.
@@ -11,16 +12,20 @@ MAXIMUM CONTIGUOUS CHAIN: In this case, we will analyze the sequences following 
 
 
 
-
+```
 Short description of approach to solve the problem
 ```
+DESCRIPTION
+
+
 To begin with, I have gone through the question carefully and then I have opted for an approach to divide the problem into functions so that my work becomes easy. I have categorized the code into different functions for each operation. For example, I have used def match_number()  to calculate the number of matching elements from the two files. Then I used def contiguous_chain(seq1, seq2)  which calculates the matching pairs adjacent and continuous. To shift the elements I have used def shift_sequence1() and def shift_sequence2() functions. Another important function to focus on which I have used is def file_to_seq() where the file operations take place like opening the text file, reading the file, and closing the file. Then I used the main function for taking inputs and printing outputs. The input files are taken as text files with the “.txt” extension only. Mostly, I have used “try and except” which helps in handling the errors. In this approach, since python interprets the code line-by-line, the flow goes to the try statement and checks if it is true. If the goal is accomplished by the code then the except block is ignored and processed. In case, any exception in the try block exists then the except block is approached and starts to execute the except block.
 This approach of using a try-except block to handle exceptions in python is called  “catching an exception”.
 I have opted for this approach because if I can figure out the error, I can make the required changes, and even if a particular block of code is wrong then I can remove it without affecting the whole code.
-```
+
 
 CODE
 ```
+#This function is used for defined for finding the number of matches which gives the score
 def match_number(seq1, seq2):
     match = 0
     for a, b in zip(seq1, seq2):
@@ -29,7 +34,7 @@ def match_number(seq1, seq2):
     # print(match)
     return match
 
-
+#The function here is defined to find the continuous matches that are found as pairs
 def contiguous_chain(seq1, seq2):
     temp = 0
     chain = 0
@@ -45,7 +50,7 @@ def contiguous_chain(seq1, seq2):
     # print(chain)
     return chain
 
-
+#this function is defined for shifting the sequence1 by the number of positions given by the user input
 def shift_sequence1(seq1, seq2, shifts):
     ss1 = []
     ss2 = []
@@ -57,7 +62,7 @@ def shift_sequence1(seq1, seq2, shifts):
     # print(ss1,ss2)
     return ss1, ss2
 
-
+#this function is defined for shifting the sequence2 by the number of positions given by the user input
 def shift_sequence2(seq1, seq2, shifts):
     ss1 = []
     ss2 = []
@@ -69,7 +74,7 @@ def shift_sequence2(seq1, seq2, shifts):
     # print(ss1,ss2)
     return ss1, ss2
 
-
+#this function is defined for the shifted sequences i.e., the sequence that is shifted by the number of positions given by the user
 def shifted_sequences(seq1, seq2, shifts):
     ss1 = []
     ss2 = []
@@ -101,7 +106,7 @@ def file_to_seq(fname1, fname2):
 
     return seq1, seq2
 
-
+#this is the main function
 def main():
     matches = []
     chains = []
@@ -152,7 +157,11 @@ main()
 The text files used as seq1.txt and seq2.txt contains the following sequences 
 seq1 - ACTGATCAC--
 seq2 - --TTAGCTCGA
-Links to seq1 and seq2 are 
+Links to the text files that were used as input seq1 and seq2 are 
+
+[seq1](https://github.com/Tejabandamidi/INF502/blob/main/Code/seq1.txt)
+
+[seq2](https://github.com/Tejabandamidi/INF502/blob/main/Code/seq2.txt)
 
 OUTPUT
 ```
